@@ -1,0 +1,174 @@
+/* --- 基本設定 --- */
+:root {
+    --bg-color: #121212; /* 背景色 */
+    --text-color: #e0e0e0; /* 基本文字色 */
+    --primary-color: #00aaff; /* アクセントカラー */
+    --card-bg-color: #1e1e1e; /* カード背景色 */
+    --light-bg-color: #242424; /* 明るいセクションの背景色 */
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ヘッダー --- */
+.header {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header-nav a {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- ヒーローセクション --- */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; /* ヘッダーの高さ分 */
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+/* --- 共通セクション --- */
+.section {
+    padding: 80px 0;
+    opacity: 0; /* JSでアニメーションさせるため初期状態は非表示 */
+    transform: translateY(30px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+.section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.section-light {
+    background-color: var(--light-bg-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/* --- サービスセクション --- */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
+}
+
+.service-card h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* --- フッター --- */
+.footer {
+    background-color: var(--card-bg-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* --- レスポンシブ対応 --- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
