@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bitspace</title>
+    <title>bitSpace | デジタルの可能性を、あなたの空間へ。</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <h1 class="header-logo">bitspace</h1>
+            <h1 class="header-logo">bitSpace</h1>
             <nav class="header-nav">
                 <ul>
                     <li><a href="#service">Service</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,8 +29,13 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2 class="hero-title">デジタルの可能性を、<br>あなたの空間へ。</h2>
-                <p class="hero-subtitle">bitspaceは、未来を創造するテクノロジーパートナーです。</p>
+                <span class="hero-tag">IT Solutions & Consulting</span>
+                <h2 class="hero-title">ビジネスをハックする。</h2>
+                <p class="hero-subtitle">bitSpaceは、IT技術でビジネスの未来を創造するテクノロジーパートナーです。</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+                    <a href="#service" class="btn btn-outline">サービス内容</a>
+                </div>
             </div>
         </section>
 
@@ -37,41 +44,76 @@
                 <h3 class="section-title">SERVICE</h3>
                 <div class="service-grid">
                     <div class="service-card">
-                        <h4>Webサイト制作</h4>
-                        <p>デザインから実装、運用まで一貫してサポートします。</p>
+                        <i class="fa-solid fa-laptop-code service-icon"></i>
+                        <h4>Web制作・開発</h4>
+                        <p>モダンな技術を用いたWebサイト制作から、要件定義・設計、運用まで一貫してサポートします。</p>
                     </div>
                     <div class="service-card">
+                        <i class="fa-solid fa-gears service-icon"></i>
                         <h4>システム開発</h4>
-                        <p>業務効率化のためのカスタムシステムを構築します。</p>
+                        <p>業務効率化のためのカスタムシステムやAPI連携など、ビジネス課題を解決する仕組みを構築します。</p>
                     </div>
                     <div class="service-card">
+                        <i class="fa-solid fa-lightbulb service-icon"></i>
                         <h4>DXコンサルティング</h4>
-                        <p>あなたのビジネスをデジタル技術で加速させます。</p>
+                        <p>既存業務のデジタル化を推進。技術選定から導入後の定着まで、伴走型で支援いたします。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section section-light">
+        <section id="projects" class="section section-light">
             <div class="container">
-                <h3 class="section-title">ABOUT US</h3>
-                <p>
-                    私たちは「bitspace」という名の下、デジタル（bit）の持つ無限の可能性を、お客様一人ひとりの事業空間（space）に最適化し、提供することを使命としています。
-                </p>
+                <h3 class="section-title">PROJECTS</h3>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <span class="project-category">In Development</span>
+                        <h4>サロン予約管理システム</h4>
+                        <p>2026年3月のトライアル開始に向けて開発中。直感的なUIと効率的な予約導線を実現。</p>
+                    </div>
+                    <div class="project-item">
+                        <span class="project-category">Technical Expertise</span>
+                        <h4>ミッションプランニング支援</h4>
+                        <p>衛星運用システムの設計・開発。高度なシーケンス設計とアルゴリズム実装の知見を保有。</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section id="about" class="section">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h3 class="section-title left">REPRESENTATIVE</h3>
+                    <div class="profile-card">
+                        <div class="profile-text">
+                            <h4><span class="profile-en">Satoshi Oura</span></h4>
+                            <p class="profile-description">
+                                2025年、個人事業「bitSpace」を開業。宇宙関連システム開発分野まで、多岐にわたる開発経験を活かし、
+                                「技術を使いやすく、価値あるものとして届ける」ことを信条としています。
+                            </p>
+                            <div class="skills">
+                                <span>Java</span><span>JavaScript</span><span>Python</span><span>AWS</span><span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="contact" class="footer">
         <div class="container">
-            <p>お問い合わせはメールにてお願いいたします。</p>
-            <a href="mailto:info@example.com" class="contact-button">info@example.com</a>
-            <p class="copyright">&copy; 2025 bitspace. All Rights Reserved.</p>
+            <h3 class="footer-title">CONTACT</h3>
+            <p>お仕事のご相談・お見積りなど、お気軽にお問い合わせください。</p>
+            <div class="contact-info">
+                <a href="mailto:info@bitspace.jp" class="contact-btn">
+                    <i class="fa-regular fa-envelope"></i> info@bitspace.jp
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 bitSpace. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
