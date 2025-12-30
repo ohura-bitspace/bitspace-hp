@@ -1,174 +1,184 @@
 /* --- 基本設定 --- */
 :root {
-    --bg-color: #121212; /* 背景色 */
-    --text-color: #e0e0e0; /* 基本文字色 */
-    --primary-color: #00aaff; /* アクセントカラー */
-    --card-bg-color: #1e1e1e; /* カード背景色 */
-    --light-bg-color: #242424; /* 明るいセクションの背景色 */
+  --bg-color: #ffffff; /* (変更) 背景色 → 白 */
+  --text-color: #333333; /* (変更) 基本文字色 → 濃いグレー */
+  --primary-color: #0077b3; /* (変更) アクセントカラー → 少し落ち着いた青 */
+  --card-bg-color: #ffffff; /* (変更) カード背景色 → 白 */
+  --light-bg-color: #f4f8fa; /* (変更) 明るいセクションの背景色 → ごく薄いグレー */
 }
 
 body {
-    margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.8;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: none;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* --- ヘッダー --- */
 .header {
-    background-color: rgba(18, 18, 18, 0.8);
+    /* (変更) 背景を白ベースのすりガラスに */
+    background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
+    /* (追加) 白背景に浮かぶように薄い影を追加 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
-    margin: 0;
-    font-size: 24px;
-    color: #fff;
+  margin: 0;
+  font-size: 24px;
+  color: #111; /* (変更) ロゴの色を黒に */
 }
 
 .header-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .header-nav a {
-    color: var(--text-color);
+    color: #555; /* (変更) ナビの文字色をグレーに */
     transition: color 0.3s;
 }
 
 .header-nav a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* --- ヒーローセクション --- */
 .hero {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 80px; /* ヘッダーの高さ分 */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; /* ヘッダーの高さ分 */
+  margin-bottom: 80px; /* 下のセクションとの間隔を調整 */
 }
 
 .hero-title {
     font-size: 2.5rem;
-    color: #fff;
+    color: #222; /* (変更) タイトルの色を濃く */
     line-height: 1.4;
     margin-bottom: 1rem;
 }
 
 /* --- 共通セクション --- */
 .section {
-    padding: 80px 0;
-    opacity: 0; /* JSでアニメーションさせるため初期状態は非表示 */
-    transform: translateY(30px);
-    transition: opacity 0.8s, transform 0.8s;
+  padding: 80px 0;
+  opacity: 0; /* JSでアニメーションさせるため初期状態は非表示 */
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
 }
 .section.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 .section-light {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #222; /* (変更) タイトルの色を濃く */
 }
 
 /* --- サービスセクション --- */
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
 .service-card {
     background-color: var(--card-bg-color);
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #333;
+    /* (変更) 境界線を濃いグレーから薄いグレーに */
+    border: 1px solid #e0e0e0; 
+    /* (追加) 白いカードが背景に溶け込まないよう、薄い影を追加 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
+    /* (変更) ホバー時の影を調整 */
+    box-shadow: 0 10px 20px rgba(0, 119, 179, 0.1);
 }
-
 .service-card h4 {
-    margin-top: 0;
-    color: var(--primary-color);
+  margin-top: 0;
+  color: var(--primary-color);
 }
 
 /* --- フッター --- */
 .footer {
-    background-color: var(--card-bg-color);
+    /* (変更) フッターの背景色を薄いグレーに */
+    background-color: var(--light-bg-color);
     padding: 50px 0;
     text-align: center;
 }
-
 .contact-button {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    margin: 20px 0;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  margin: 20px 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-button:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .copyright {
     margin-top: 30px;
     font-size: 0.9rem;
-    color: #888;
+    color: #777; /* (変更) ダークモードの#888より少し濃く */
 }
 
 /* --- レスポンシブ対応 --- */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-    .header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
