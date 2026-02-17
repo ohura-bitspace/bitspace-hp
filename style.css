@@ -164,15 +164,17 @@ body {
 
 /* --- Footer --- */
 .footer { padding: 80px 0 40px; text-align: center; border-top: 1px solid var(--accent); }
-.contact-btn {
-  font-size: 1.5rem;
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 700;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
+
+/* --- Contact Form (Google Forms embed) --- */
+.contact-form-wrapper {
+  max-width: 700px;
+  margin: 2rem auto 0;
 }
-.contact-btn:hover { border-bottom-color: var(--primary); }
+
+.contact-form-wrapper iframe {
+  border: none;
+  border-radius: 12px;
+}
 
 @media (max-width: 768px) {
   .container {
