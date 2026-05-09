@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bitSpace | デジタルの可能性を、あなたの空間へ。</title>
+    <meta name="description" content="bitSpaceは鹿児島を拠点に、宇宙系システム開発、地域事業者向けDX、最適化ツールの研究開発に取り組むITエンジニアリング事業です。">
+    <title>bitSpace | 宇宙系システム開発と地域DX</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <header class="header">
-        <div class="container">
-            <h1 class="header-logo">bitSpace</h1>
-            <nav class="header-nav">
+        <div class="container header-inner">
+            <a href="#" class="header-logo">bit<span>Space</span></a>
+            <nav class="header-nav" aria-label="メインナビゲーション">
                 <ul>
-                    <li><a href="#service">サービス</a></li>
-                    <li><a href="#projects">実績</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#strength">技術基盤</a></li>
+                    <li><a href="#roadmap">展望</a></li>
+                    <li><a href="#about">事業者情報</a></li>
+                    <li><a href="#contact" class="nav-cta">相談する</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,74 +29,166 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <span class="hero-tag">IT Solutions & Consulting</span>
-                <h2 class="hero-title">ビジネスをハックする。</h2>
-                <p class="hero-subtitle">複雑な課題を、衛星運用の精度とシンプルなロジックで解決する。</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
-                    <a href="#service" class="btn btn-outline">サービス内容</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="service" class="section">
-            <div class="container">
-                <h3 class="section-title">サービス</h3>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <i class="fa-solid fa-laptop-code service-icon"></i>
-                        <h4>Web制作・開発</h4>
-                        <p>モダンな技術を用いたWebサイト制作から、要件定義・設計、運用まで一貫してサポートします。</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-gears service-icon"></i>
-                        <h4>システム開発</h4>
-                        <p>業務効率化のためのカスタムシステムやAPI連携など、ビジネス課題を解決する仕組みを構築します。</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-lightbulb service-icon"></i>
-                        <h4>DXコンサルティング</h4>
-                        <p>既存業務のデジタル化を推進。技術選定から導入後の定着まで、伴走型で支援いたします。</p>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">Systems Engineering & Digital Innovation</span>
+                    <h1>高度な技術力を、<br>現場で使えるシステムへ。</h1>
+                    <p>
+                        bitSpaceは、宇宙開発分野で培ったシステム設計・開発力を軸に、
+                        地域事業者向けSaaSと、複雑な計画業務を支える最適化ツールの研究開発を進めています。
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#business" class="btn btn-primary">事業内容を見る</a>
+                        <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section section-light">
-            <div class="container">
-                <h3 class="section-title">実績</h3>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <span class="project-category">Delivered</span>
-                        <h4>小規模サロン向け 予約管理システム開発</h4>
-                        <p>要件整理から画面設計・実装まで一貫して支援。直感的なUIと運用しやすい管理導線を実現。自社サービスも現在開発中。</p>
+                <div class="hero-panel" aria-label="bitSpaceの事業領域">
+                    <div class="orbit-visual">
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <div class="core">bit</div>
+                        <span class="node node-space"><i class="fa-solid fa-satellite"></i></span>
+                        <span class="node node-salon"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="node node-rd"><i class="fa-solid fa-diagram-project"></i></span>
                     </div>
-                    <div class="project-item">
-                        <span class="project-category">Technical Expertise</span>
-                        <h4>ミッション運用・計画策定の支援</h4>
-                        <p>宇宙領域の運用・計画策定を支えるシステムの設計・開発。高度なシーケンス設計とアルゴリズム実装の知見を保有。</p>
+                    <div class="panel-copy">
+                        <span>Business Pillars</span>
+                        <strong>Enterprise / SaaS / R&D</strong>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="container about-container">
-                <div class="about-content">
-                    <h3 class="section-title left">About</h3>
-                    <div class="profile-card">
-                        <div class="profile-text">
-                            <h4><span class="profile-en">Satoshi Oura</span></h4>
-                            <p class="profile-description">
-                                宇宙開発の現場で磨き上げたエンジニアリングを、日常のビジネス領域へ。複雑な要件をシンプルなロジックへと解きほぐし、最適なアーキテクチャで事業の成長を支えるパートナーとして並走する。
-                                2025年、鹿児島にて個人事業「bitSpace」設立。
-                            </p>
-                            <div class="skills">
-                                <span>Java</span><span>JavaScript</span><span>React</span><span>Python</span><span>Flutter/Dart</span><span>GitHub</span>
-                            </div>
+        <section id="business" class="section business-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Three Business Pillars</span>
+                    <h2>事業内容</h2>
+                    <p>受託開発で安定した技術提供を行いながら、自社プロダクトと研究開発を育てています。</p>
+                </div>
+                <div class="business-grid">
+                    <article class="business-card is-blue">
+                        <div class="card-top">
+                            <span class="status">稼働中</span>
                         </div>
+                        <i class="fa-solid fa-satellite-dish card-icon"></i>
+                        <h3>エンタープライズシステム開発</h3>
+                        <p>
+                            宇宙開発分野のシステム設計・開発に参画。現在は衛星運用計画システムを中心に、
+                            東京企業との継続取引を通じて高度な業務システム開発を支援しています。
+                        </p>
+                    </article>
+
+                    <article class="business-card is-teal">
+                        <div class="card-top">
+                            <span class="status">展開中</span>
+                        </div>
+                        <i class="fa-solid fa-mobile-screen-button card-icon"></i>
+                        <h3>地域密着型DXソリューション</h3>
+                        <p>
+                            美容サロン向けSaaS「bit Salon」を開発・展開。LINE連携による予約・顧客管理で、
+                            鹿児島をはじめとする小規模事業者のデジタル化を後押しします。
+                        </p>
+                    </article>
+
+                    <article class="business-card is-orange">
+                        <div class="card-top">
+                            <span class="status">研究中</span>
+                        </div>
+                        <i class="fa-solid fa-diagram-project card-icon"></i>
+                        <h3>最適化ツールの研究開発</h3>
+                        <p>
+                            衛星観測スケジューリングで培った制約処理・計画立案技術を活用。
+                            保育園のシフト作成、要員配置、業務プロセス改善など、複雑な条件を伴う計画業務の自動化を目指します。
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="strength" class="section strength-section">
+            <div class="container strength-grid">
+                <div class="section-heading align-left">
+                    <span class="eyebrow">Technical Foundation</span>
+                    <h2>技術基盤</h2>
+                    <p>
+                        業務要件を読み解く設計力と、運用に耐える実装力を組み合わせて、
+                        現場で長く使えるシステムに落とし込みます。
+                    </p>
+                </div>
+                <div class="tech-panel">
+                    <h3>主な技術スタック</h3>
+                    <div class="tech-chips">
+                        <span>Java / Spring Boot</span>
+                        <span>React</span>
+                        <span>Python</span>
+                        <span>CesiumJS</span>
+                        <span>LINE API</span>
+                        <span>Docker</span>
+                        <span>MySQL / PostgreSQL</span>
+                        <span>数理最適化</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="section roadmap-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Roadmap</span>
+                    <h2>今後の展望</h2>
+                    <p>受託・自社サービス・研究開発を接続し、鹿児島から実用的なITプロダクトを育てます。</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item current">
+                        <span>現在</span>
+                        <strong>受託開発</strong>
+                        <p>システム開発案件に参画。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span>近期</span>
+                        <strong>bit Salonの展開加速</strong>
+                        <p>鹿児島から全国の美容サロンへ、予約・顧客管理の仕組みを提供。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span>1年後</span>
+                        <strong>株式会社 bitSpace 設立</strong>
+                        <p>継続的な開発体制とプロダクト展開を見据え法人化を目指します。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span>中期</span>
+                        <strong>最適化R&Dのプロダクト化</strong>
+                        <p>数理最適化・AI・量子アニーリング等も視野に、地域課題へ応用。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container about-grid">
+                <div>
+                    <span class="eyebrow">About</span>
+                    <h2>事業者情報</h2>
+                </div>
+                <div class="about-card">
+                    <dl>
+                        <div>
+                            <dt>屋号</dt>
+                            <dd>bitSpace（ビットスペース）</dd>
+                        </div>
+                        <div>
+                            <dt>代表</dt>
+                            <dd>Satoshi Oura</dd>
+                        </div>
+                        <div>
+                            <dt>所在地</dt>
+                            <dd>鹿児島県鹿児島市</dd>
+                        </div>
+                        <div>
+                            <dt>事業領域</dt>
+                            <dd>宇宙系ソリューション、地域DXソリューション、最適化ツール研究開発</dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
         </section>
@@ -103,10 +196,17 @@
 
     <footer id="contact" class="footer">
         <div class="container">
-            <h3 class="footer-title">お問い合わせ</h3>
-            <p>お仕事のご相談・お見積りなど、お気軽にお問い合わせください。</p>
+            <span class="eyebrow">Contact</span>
+            <h2>ご相談・お問い合わせ</h2>
+            <p>システム開発、業務改善、自社プロダクトに関するご相談など、お気軽にお問い合わせください。</p>
+            <div class="contact-links">
+                <a href="mailto:info@bitspace.jp" class="mail-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@bitspace.jp
+                </a>
+                <span>Web: www.bitspace.jp</span>
+            </div>
             <div class="contact-form-wrapper">
-                <!-- Google Formsのiframeをここに貼り付けてください -->
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejmJkj0WuDw0mufhEErGerxcPOFvMUopdCU0YNboDYLRvF4w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
             </div>
             <p class="copyright">&copy; 2025 bitSpace. All Rights Reserved.</p>
