@@ -113,7 +113,7 @@ a {
   padding: 142px 0 76px;
   background:
     linear-gradient(135deg, rgba(22, 35, 63, 0.96), rgba(30, 95, 168, 0.87)),
-    url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80") center/cover;
+    url("images/hero.jpg") center/cover;
   color: #fff;
 }
 
